@@ -1,0 +1,28 @@
+{
+  "rewrites": [
+    {
+      "source": "/pages/:path*",
+      "destination": "https://loja.sobinvestigacao.com/pages/:path*"
+    },
+    {
+      "source": "/account",
+      "destination": "https://loja.sobinvestigacao.com/account"
+    },
+    {
+      "source": "/account/:path*",
+      "destination": "https://loja.sobinvestigacao.com/account/:path*"
+    },
+    {
+      "source": "/checkout",
+      "destination": "https://loja.sobinvestigacao.com/checkout"
+    },
+    {
+      "source": "/checkout/:path*",
+      "destination": "https://loja.sobinvestigacao.com/checkout/:path*"
+    },
+    {
+      "source": "/:path*",
+      "destination": "https://shop.sobinvestigacao.com/:path*"
+    }
+  ]
+}
