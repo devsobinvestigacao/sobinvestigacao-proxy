@@ -1,20 +1,23 @@
 {
-  "rewrites": [
+  "redirects": [
     {
-      "source": "/",
-      "destination": "https://shop.sobinvestigacao.com/"
-    },
+      "source": "/pages/:path*",
+      "destination": "https://loja.sobinvestigacao.com/pages/:path*",
+      "permanent": false
+    }
+  ],
+  "rewrites": [
     {
       "source": "/customer_authentication/:path*",
       "destination": "https://loja.sobinvestigacao.com/customer_authentication/:path*"
     },
     {
-      "source": "/challenge/:path*",
-      "destination": "https://loja.sobinvestigacao.com/challenge/:path*"
-    },
-    {
       "source": "/auth/:path*",
       "destination": "https://loja.sobinvestigacao.com/auth/:path*"
+    },
+    {
+      "source": "/challenge/:path*",
+      "destination": "https://loja.sobinvestigacao.com/challenge/:path*"
     },
     {
       "source": "/account",
