@@ -1,6 +1,10 @@
 {
   "rewrites": [
     {
+      "source": "/",
+      "destination": "https://shop.sobinvestigacao.com/"
+    },
+    {
       "source": "/pages/:path*",
       "destination": "https://loja.sobinvestigacao.com/pages/:path*"
     },
