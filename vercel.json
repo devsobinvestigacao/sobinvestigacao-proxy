@@ -1,43 +1,41 @@
 {
-  "redirects": [
+  "routes": [
     {
-      "source": "/pages/:path*",
-      "destination": "https://loja.sobinvestigacao.com/pages/:path*",
-      "permanent": false
-    }
-  ],
-  "rewrites": [
-    {
-      "source": "/customer_authentication/:path*",
-      "destination": "https://loja.sobinvestigacao.com/customer_authentication/:path*"
+      "src": "/customer_authentication/(.*)",
+      "dest": "https://restrito.sobinvestigacao.com/customer_authentication/$1"
     },
     {
-      "source": "/auth/:path*",
-      "destination": "https://loja.sobinvestigacao.com/auth/:path*"
+      "src": "/auth/(.*)",
+      "dest": "https://restrito.sobinvestigacao.com/auth/$1"
     },
     {
-      "source": "/challenge/:path*",
-      "destination": "https://loja.sobinvestigacao.com/challenge/:path*"
+      "src": "/challenge/(.*)",
+      "dest": "https://restrito.sobinvestigacao.com/challenge/$1"
     },
     {
-      "source": "/account",
-      "destination": "https://loja.sobinvestigacao.com/account"
+      "src": "/account",
+      "dest": "https://restrito.sobinvestigacao.com/account"
     },
     {
-      "source": "/account/:path*",
-      "destination": "https://loja.sobinvestigacao.com/account/:path*"
+      "src": "/account/(.*)",
+      "dest": "https://restrito.sobinvestigacao.com/account/$1"
     },
     {
-      "source": "/checkout",
-      "destination": "https://loja.sobinvestigacao.com/checkout"
+      "src": "/checkout",
+      "dest": "https://restrito.sobinvestigacao.com/checkout"
     },
     {
-      "source": "/checkout/:path*",
-      "destination": "https://loja.sobinvestigacao.com/checkout/:path*"
+      "src": "/checkout/(.*)",
+      "dest": "https://restrito.sobinvestigacao.com/checkout/$1"
     },
     {
-      "source": "/:path*",
-      "destination": "https://shop.sobinvestigacao.com/:path*"
+      "src": "/pages/(.*)",
+      "status": 307,
+      "headers": { "Location": "https://restrito.sobinvestigacao.com/pages/$1" }
+    },
+    {
+      "src": "/(.*)",
+      "dest": "https://shop.sobinvestigacao.com/$1"
     }
   ]
 }
