@@ -2,38 +2,38 @@
   "redirects": [
     {
       "source": "/pages/:path*",
-      "destination": "https://loja.sobinvestigacao.com/pages/:path*",
+      "destination": "https://restrito.sobinvestigacao.com/pages/:path*",
       "permanent": false
     }
   ],
   "rewrites": [
     {
       "source": "/customer_authentication/:path*",
-      "destination": "https://loja.sobinvestigacao.com/customer_authentication/:path*"
+      "destination": "https://restrito.sobinvestigacao.com/customer_authentication/:path*"
     },
     {
       "source": "/auth/:path*",
-      "destination": "https://loja.sobinvestigacao.com/auth/:path*"
+      "destination": "https://restrito.sobinvestigacao.com/auth/:path*"
     },
     {
       "source": "/challenge/:path*",
-      "destination": "https://loja.sobinvestigacao.com/challenge/:path*"
+      "destination": "https://restrito.sobinvestigacao.com/challenge/:path*"
     },
     {
       "source": "/account",
-      "destination": "https://loja.sobinvestigacao.com/account"
+      "destination": "https://restrito.sobinvestigacao.com/account"
     },
     {
       "source": "/account/:path*",
-      "destination": "https://loja.sobinvestigacao.com/account/:path*"
+      "destination": "https://restrito.sobinvestigacao.com/account/:path*"
     },
     {
       "source": "/checkout",
-      "destination": "https://loja.sobinvestigacao.com/checkout"
+      "destination": "https://restrito.sobinvestigacao.com/checkout"
     },
     {
       "source": "/checkout/:path*",
-      "destination": "https://loja.sobinvestigacao.com/checkout/:path*"
+      "destination": "https://restrito.sobinvestigacao.com/checkout/:path*"
     },
     {
       "source": "/:path*",
