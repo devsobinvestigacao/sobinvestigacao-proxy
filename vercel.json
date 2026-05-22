@@ -1,6 +1,13 @@
 {
   "routes": [
     {
+      "src": "/products/(.*)",
+      "status": 307,
+      "headers": {
+        "Location": "https://sobinvestigacao.com/produto/$1"
+      }
+    },
+    {
       "src": "/customer_authentication/(.*)",
       "dest": "https://restrito.sobinvestigacao.com/customer_authentication/$1"
     },
@@ -31,7 +38,9 @@
     {
       "src": "/pages/(.*)",
       "status": 307,
-      "headers": { "Location": "https://restrito.sobinvestigacao.com/pages/$1" }
+      "headers": {
+        "Location": "https://restrito.sobinvestigacao.com/pages/$1"
+      }
     },
     {
       "src": "/(.*)",
